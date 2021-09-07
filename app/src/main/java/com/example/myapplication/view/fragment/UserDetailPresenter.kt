@@ -1,7 +1,6 @@
 package com.example.myapplication.view.fragment
 
 import com.example.myapplication.model.Album
-import com.example.myapplication.model.Comment
 import com.example.myapplication.service.NetworkCall
 import com.example.myapplication.service.NetworkInterface
 import com.example.myapplication.service.NetworkRequest
