@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/margin_5">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_post_company"/>
+
+    <TextView
+        android:id="@+id/tv_post_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="1234512345123451234512345123451234512345" />
+
+    <TextView
+        android:id="@+id/tv_post_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_content"
+        android:textStyle="italic"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_post_title"
+        app:layout_constraintStart_toStartOf="@id/tv_post_title"
+        tools:text="123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345123451234512345"/>
+
+    <TextView
+        android:id="@+id/tv_post_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_content"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="@dimen/margin_10"
+        app:layout_constraintStart_toStartOf="@id/tv_post_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_post_content"
+        tools:text="By: mikkel"/>
+
+    <TextView
+        android:id="@+id/tv_post_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_content"
+        android:textColor="@color/teal_700"
+        android:paddingBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_post_owner"
+        app:layout_constraintStart_toStartOf="@id/tv_post_owner"
+        tools:text="PT. XYZ"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

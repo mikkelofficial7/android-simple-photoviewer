@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Kumparan Test</string>
+    <string name="comments" translatable="false">Comments: </string>
+    <string name="close" translatable="false">Close</string>
+</resources>
