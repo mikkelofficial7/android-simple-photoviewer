@@ -15,9 +15,6 @@ class UserDetailPresenter(val fragment: UserDetailFragment) {
                 fragment.setDataAlbum(responseBody)
             }
 
-            override fun onFailed(errorCode: String, errorMessage: String) {
-            }
-
         })
     }
 }

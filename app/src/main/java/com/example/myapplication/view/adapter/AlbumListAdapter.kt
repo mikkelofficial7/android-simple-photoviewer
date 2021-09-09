@@ -72,9 +72,6 @@ class AlbumListAdapter(
                     onAlbumLoad(responseBody)
                 }
 
-                override fun onFailed(errorCode: String, errorMessage: String) {
-                }
-
             })
         }
     }

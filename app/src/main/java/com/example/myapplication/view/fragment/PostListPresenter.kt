@@ -15,9 +15,6 @@ class PostListPresenter(val fragment: PostListFragment) {
                 fragment.setDataPost(responseBody)
             }
 
-            override fun onFailed(errorCode: String, errorMessage: String) {
-            }
-
         })
     }
 
@@ -26,9 +23,6 @@ class PostListPresenter(val fragment: PostListFragment) {
         NetworkCall.process(request, object: ResponseCallback<List<User>> {
             override fun onSuccess(responseBody: List<User>) {
                 fragment.setDataUser(responseBody)
-            }
-
-            override fun onFailed(errorCode: String, errorMessage: String) {
             }
 
         })

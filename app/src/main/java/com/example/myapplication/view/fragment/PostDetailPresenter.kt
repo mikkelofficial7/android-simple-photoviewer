@@ -15,9 +15,6 @@ class PostDetailPresenter(val fragment: PostDetailFragment) {
                 fragment.setDataComment(responseBody)
             }
 
-            override fun onFailed(errorCode: String, errorMessage: String) {
-            }
-
         })
     }
 }
