@@ -9,7 +9,7 @@ import com.example.myapplication.service.ResponseCallback
 class UserDetailPresenter(val fragment: UserDetailFragment) {
 
     fun loadUserAlbum(userId: Int) {
-        val request = NetworkRequest.create(NetworkInterface::class.java).getUserAlbum(userId)
+        val request =  NetworkCall.provideRequest(NetworkInterface::class.java).getUserAlbum(userId)
         NetworkCall.process(request, object: ResponseCallback<List<Album>> {
             override fun onSuccess(responseBody: List<Album>) {
                 fragment.setDataAlbum(responseBody)

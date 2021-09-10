@@ -9,7 +9,7 @@ import com.example.myapplication.service.ResponseCallback
 class PostDetailPresenter(val fragment: PostDetailFragment) {
 
     fun loadAllCommentByPostId(postId: Int) {
-        val request = NetworkRequest.create(NetworkInterface::class.java).getAllCommentByPostId(postId)
+        val request = NetworkCall.provideRequest(NetworkInterface::class.java).getAllCommentByPostId(postId)
         NetworkCall.process(request, object: ResponseCallback<List<Comment>> {
             override fun onSuccess(responseBody: List<Comment>) {
                 fragment.setDataComment(responseBody)

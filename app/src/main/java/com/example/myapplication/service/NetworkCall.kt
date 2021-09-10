@@ -36,4 +36,8 @@ object NetworkCall {
             else -> responseCallback.onOtherError(response.code().toString(), response.message().toString())
         }
     }
+
+    fun <T>provideRequest(clazz: Class<T>) : T {
+        return NetworkRequest.create(clazz)
+    }
 }

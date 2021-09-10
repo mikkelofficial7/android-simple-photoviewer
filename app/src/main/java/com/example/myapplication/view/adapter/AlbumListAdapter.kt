@@ -66,7 +66,7 @@ class AlbumListAdapter(
         }
 
         private fun getAlbumPhoto(albumId: Int, onAlbumLoad: (List<Photo>) -> Unit) {
-            val request = NetworkRequest.create(NetworkInterface::class.java).getPhotoAlbum(albumId)
+            val request = NetworkCall.provideRequest(NetworkInterface::class.java).getPhotoAlbum(albumId)
             NetworkCall.process(request, object: ResponseCallback<List<Photo>> {
                 override fun onSuccess(responseBody: List<Photo>) {
                     onAlbumLoad(responseBody)
