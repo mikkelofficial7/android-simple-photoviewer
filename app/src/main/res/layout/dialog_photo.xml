@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <com.example.myapplication.view.customView.imageLoader.LoaderImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/iv_photo"
+        app:layout_constraintEnd_toEndOf="@+id/iv_photo"
+        app:layout_constraintStart_toStartOf="@id/iv_photo"/>
+
     <com.example.myapplication.view.customView.ZoomImageView
         android:id="@+id/iv_photo"
         android:layout_width="0dp"
